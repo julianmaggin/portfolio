@@ -437,6 +437,25 @@
   }
 
   /* ─── Print ────────────────────────────────────────── */
+  .method {
+    padding: clamp(3rem, 8vh, 6rem) clamp(2rem, 5vw, 5rem);
+    border-top: 1px solid var(--rule);
+    background: var(--paper);
+  }
+  .method-grid {
+    max-width: 1100px; margin: 0 auto;
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 2rem 3rem; margin-top: 2rem;
+  }
+  .method-col h4 {
+    font-family: var(--mono); font-size: 0.7rem; letter-spacing: 0.12em;
+    text-transform: uppercase; color: var(--ink-muted); margin: 0 0 0.7rem;
+  }
+  .method-col ul { list-style: none; margin: 0; padding: 0; }
+  .method-col li {
+    font-family: var(--sans); font-size: 0.85rem; color: var(--ink-soft);
+    padding: 0.25rem 0; border-bottom: 1px solid var(--rule);
+  }
   @media print {
     body { background: white; }
     .project, .cover, .index, .closing { page-break-inside: avoid; }
@@ -453,12 +472,13 @@
     <div>
       <h1>Julian<br><em>Maggin</em></h1>
       <p class="role">Senior Product Development Engineer</p>
-      <p class="manifesto">Selected work from thirteen years designing high-volume consumer products.</p>
+      <p class="manifesto">Selected work from thirteen years designing high-volume consumer products — premium appliances at Fisher &amp; Paykel, plumbing and connected hardware at Caroma / GWA, and safety-critical electromechanical products at B&amp;D Doors. Concept to mass production, with the tooling, testing and factory-floor work in between.</p>
     </div>
     <div class="cover-contact">
       Surry Hills, Sydney<br>
       <a href="mailto:jrbmaggin@gmail.com">jrbmaggin@gmail.com</a><br>
-      0468 416 256
+      0468 416 256<br>
+      <a href="Julian_Maggin_CV.pdf" download>Download CV (PDF)</a>
     </div>
   </div>
   <div class="cover-image">
@@ -497,6 +517,50 @@
         <span class="index-meta">Fisher &amp; Paykel &times; Haier &middot; 2018&ndash;20</span>
       </li>
     </ol>
+  </div>
+</section>
+
+
+<!-- ═══ METHOD ═════════════════════════════════ -->
+<section class="method">
+  <p class="label">Method &amp; Tools</p>
+  <div class="method-grid">
+    <div class="method-col">
+      <h4>Design</h4>
+      <ul>
+        <li>SolidWorks (8+ years)</li>
+        <li>Creo Parametric</li>
+        <li>Concept development</li>
+        <li>Component detailing &amp; drafting</li>
+      </ul>
+    </div>
+    <div class="method-col">
+      <h4>Manufacturing</h4>
+      <ul>
+        <li>Plastic injection moulding</li>
+        <li>Sheetmetal &amp; metalwork</li>
+        <li>DFM / DFA</li>
+        <li>Tooling &amp; production trials</li>
+      </ul>
+    </div>
+    <div class="method-col">
+      <h4>Validation</h4>
+      <ul>
+        <li>Prototype build &amp; test</li>
+        <li>Drop / transit / climatic testing</li>
+        <li>Cyclic durability testing</li>
+        <li>Control &amp; test plans</li>
+      </ul>
+    </div>
+    <div class="method-col">
+      <h4>Compliance &amp; Delivery</h4>
+      <ul>
+        <li>IP ingress sealing (IP66)</li>
+        <li>AU/NZ water-contact standards</li>
+        <li>Overseas supplier management</li>
+        <li>BOMs &amp; technical documentation</li>
+      </ul>
+    </div>
   </div>
 </section>
 
@@ -542,6 +606,11 @@
         <li>Free rotation while installed</li>
         <li>Valves engage on bulb attachment</li>
         <li>Cosmetic finish across two material families</li>
+      </ul>
+      <h3>Results</h3>
+      <ul>
+        <li>Launched into the Hai range</li>
+        <li>Patent pending</li>
       </ul>
     </aside>
     <div class="narrative">
@@ -863,6 +932,7 @@
 <!-- ═══ CLOSING ═════════════════════════════════════════════ -->
 <section class="closing">
   <p class="label">Get in Touch</p>
+  <p style="font-family: var(--mono); font-size: 0.75rem; letter-spacing: 0.04em; opacity: 0.65; max-width: 640px; margin: 0 auto 2rem;">Earlier — Stallion Plastics (sole design engineer, injection-moulding tooling, 2012–17) · Sydney Trains (component reliability, 2024) · redactcv.com (founder, B2B SaaS, 2026)</p>
   <div class="closing-contact">
     Julian Maggin · Surry Hills, Sydney<br>
     <a href="mailto:jrbmaggin@gmail.com">jrbmaggin@gmail.com</a> · 0468 416 256
